@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const valueB =
           parseFloat(cellB.replace(/[^0-9.]/g, '')) || cellB.toLowerCase();
 
-        return valueA > valueB ? 1 : -1;
+          return valueA > valueB ? 1 : valueA < valueB ? -1 : 0;
       });
 
       const tbody = table.querySelector('tbody');
